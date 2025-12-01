@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Krzysztof Smogorzewski</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Krzysztof Smogorzewski</div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style="margin-top: 70px;">
+        <section class="about-hero">
+            <div class="container">
+                <h1>About Me</h1>
+                <p class="about-subtitle">Cloud Engineer passionate about infrastructure automation and DevOps</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2><b>My Story</b></h2>
+                        <p>I am an AWS Cloud Engineer with hands-on experience in designing and managing cloud infrastructure, implementing automation, and applying DevOps practices while following AWS and security best practices. I have a strong background in Terraform, enabling efficient and scalable deployments. I hold multiple AWS, Terraform, and Kubernetes certifications.</p>
+                        
+                        <h2>What I Do</h2>
+                        <ul class="skills-list">
+                            <li>Cloud infrastructure design and implementation</li>
+                            <li>CI/CD pipeline development and optimization</li>
+                            <li>Kubernetes cluster management and orchestration</li>
+                            <li>Infrastructure as Code with modern tools</li>
+                            <li>Application deployment automation</li>
+                        </ul>
+
+                        <h3>Work History</h3>
+                        <div class="work-history">
+                            <div class="work-item">
+                                <h4>AWS Cloud Engineer</h4>
+                                <p class="work-company">Chaos Gears</p>
+                                <p class="work-dates">October 2024 - Present</p>
+                                <p class="work-description">Leading infrastructure projects, designing CI/CD pipelines, and managing application deployments for clients using AWS, Kubernetes, and automation tools.</p>
+                            </div>
+                            <div class="work-item">
+                                <h4>Junior AWS Cloud Engineer</h4>
+                                <p class="work-company">Chaos Gears</p>
+                                <p class="work-dates">August 2023 - September 2024</p>
+                                <ul class="work-description-list">
+                                    <li>Creating and maintaining AWS resources</li>
+                                    <li>Designing and implementing Infrastructure as Code solutions with Terraform</li>
+                                    <li>Building CI/CD pipelines with GitLab CI and GitHub Actions</li>
+                                    <li>Automating containerized application deployments using Amazon ECS</li>
+                                    <li>Configuring client and production landing zones following AWS best practices</li>
+                                    <li>Implementing security and compliance solutions (GuardDuty, AWS Config, Security Hub)</li>
+                                    <li>Deploying and managing monitoring systems with Amazon CloudWatch</li>
+                                    <li>Setting up alerts and dashboards for key system and application metrics</li>
+                                    <li>Analyzing cloud costs and recommending optimization strategies</li>
+                                    <li>Providing guidance on cloud architecture and DevOps best practices</li>
+                                    <li>Troubleshooting performance issues through log analysis</li>
+                                    <li>Restoring systems after failures or cyberattacks</li>
+                                </ul>
+                            </div>
+                            <div class="work-item">
+                                <h4>Cloud Engineering Intern</h4>
+                                <p class="work-company">Chaos Gears</p>
+                                <p class="work-dates">May 2023 - July 2023</p>
+                                <p class="work-description">During my internship, I have contributed to the development of an internal AWS landing zone project, leveraging multiple AWS services and industry best practices. Gained hands-on experience with AWS Organizations, AWS SSO, SCP, CloudTrail, CloudWatch, S3, GuardDuty, Budgets, and Security Hub, with the entire project designed and deployed using Terraform.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-sidebar">
+                        <div class="profile-image">
+                            <img src="https://via.placeholder.com/300x300" alt="Krzysztof Smogorzewski" />
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <h3>Technologies I Use</h3>
+                            <div class="tech-grid">
+                                <span class="tech-item">AWS</span>
+                                <span class="tech-item">Kubernetes</span>
+                                <span class="tech-item">GitHub Actions</span>
+                                <span class="tech-item">Python</span>
+                                <span class="tech-item">Git</span>
+                                <span class="tech-item">Docker</span>
+                                <span class="tech-item">Terraform</span>
+                                <span class="tech-item">Linux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Krzysztof Smogorzewski. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, #0369a1 0%, #1e40af 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .about-content {
+            padding: 80px 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .about-text h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+        .about-text h3 {
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1.5rem;
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            color: #475569;
+            line-height: 1.7;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 2rem;
+        }
+
+        .skills-list li {
+            padding: 0.75rem 0;
+            color: #475569;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .skills-list li:before {
+            content: "→";
+            color: #0369a1;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .work-history {
+            margin-top: 2rem;
+        }
+
+        .work-item {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .work-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .work-item h4 {
+            font-size: 1.2rem;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .work-company {
+            color: #0369a1;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .work-dates {
+            color: #475569;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .work-description {
+            color: #475569;
+            line-height: 1.6;
+        }
+
+        .work-description-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .work-description-list li {
+            padding: 0.5rem 0;
+            color: #475569;
+            position: relative;
+            padding-left: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .work-description-list li:before {
+            content: "•";
+            color: #0369a1;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .profile-image {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .profile-image img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .tech-stack h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+        }
+
+        .tech-item {
+            background: #dbeafe;
+            color: #075985;
+            padding: 0.75rem;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 0.875rem;
+            font-weight: 600;
+            border: 1px solid #bfdbfe;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+
+    <script>
+        function toggleMobileMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            navMenu.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
